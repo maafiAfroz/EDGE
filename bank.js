@@ -30,7 +30,7 @@ const api = {
     if (amount && amount > 0) {
       api.deposit(amount);
       updateUI();
-      depositInput.value = ""; // Clear input
+      depositInput.value = ""; 
     } else {
       alert("Please enter a valid deposit amount.");
     }
@@ -42,7 +42,7 @@ const api = {
       const result = api.withdraw(amount);
       if (result.success) {
         updateUI();
-        withdrawInput.value = ""; // Clear input
+        withdrawInput.value = ""; 
       } else {
         alert(result.message);
       }
