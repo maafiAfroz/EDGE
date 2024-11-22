@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="bg-white p-6 rounded-lg shadow-lg w-[400px]">
+    <div class="grid grid-cols-3 gap-4 mb-6">
+      <div class="bg-green-100 text-center p-3 rounded-lg">
+        <p class="text-sm font-bold">Total Deposit</p>
+        <p id="totalDeposit" class="text-xl font-semibold text-green-700">$0.00</p>
+      </div>
+      <div class="bg-gray-100 text-center p-3 rounded-lg">
+        <p class="text-sm font-bold">Total Withdraw</p>
+        <p id="totalWithdraw" class="text-xl font-semibold text-gray-700">$0.00</p>
+      </div>
+      <div class="bg-blue-100 text-center p-3 rounded-lg">
+        <p class="text-sm font-bold">Balance</p>
+        <p id="balance" class="text-xl font-semibold text-blue-700">$0.00</p>
+      </div>
+    </div>
+
+    <div class="space-y-4">
+      <div class="flex items-center gap-2">
+        <input
+          type="number"
+          id="depositInput"
+          placeholder="Enter Deposit Amount"
+          class="border border-gray-300 p-2 rounded w-full"
+        />
+        <button
+          id="depositButton"
+          class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+        >
+          Deposit
+        </button>
+      </div>
+      <div class="flex items-center gap-2">
+        <input
+          type="number"
+          id="withdrawInput"
+          placeholder="Enter Withdraw Amount"
+          class="border border-gray-300 p-2 rounded w-full"
+        />
+        <button id="withdrawButton" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+          Withdraw
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="bank.js"></script>
+</body>
+
+</html>
